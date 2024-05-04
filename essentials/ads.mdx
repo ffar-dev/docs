@@ -1,0 +1,89 @@
+---
+title: 'Ads'
+description: 'Display Ads'
+icon: 'rectangle-ad'
+---
+
+## Android Specific Setup
+
+Update your AndroidManifest.xml 
+Add your AdMob App ID to your app's AndroidManifest.xml file by adding the 'meta-data' tag shown below. You can find your App ID in the AdMob UI. For android:value insert your own AdMob App ID in quotes, as shown below.
+
+You can use these test App ID's from Admob for development:
+
+```dart
+android: ca-app-pub-3940256099942544~3347511713
+iOS: ca-app-pub-3940256099942544~1458002511
+```
+
+
+```xml AndroidManifest.xml
+<manifest>
+  <application>
+    <meta-data
+      android:name="com.google.android.gms.ads.APPLICATION_ID"
+      android:value="ca-app-pub-3940256099942544~3347511713"/>
+  </application>
+</manifest>
+```
+
+## iOS Specific Setup
+
+Update your Info.plist per [Firebase instructions](https://developers.google.com/admob/ios/quick-start#update_your_infoplist).
+
+```plist Info.plist
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-3940256099942544~1458002511</string>
+```
+and add
+
+```plist Info.plist
+<key>io.flutter.embedded_views_preview</key>
+<true/>
+```
+
+## Adding the AdMob app
+1. Head over to the AdMob homepage and sign up for an account
+2. Go to the dashboard and click Apps on the left-side menu
+3. Next, click Add App and select Android as the platform
+4. If your app is not published yet, select No for Is the app listed on a supported app store? and then click Continue
+5. Enter the App Name and click ADD APP
+6. Click Done
+7. Repeat the same process for an iOS app
+
+<img
+  className="block dark:hidden"
+  src="/images/create-admob.gif"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/create-admob.gif"
+  alt="Hero Dark"
+/>
+
+## Creating AdUnits
+
+The kind of advertisement presented is determined by the ad unit. You should create ad units for each type of ad that you plan to have in your app.
+
+Here’s how you do it:
+1. Click Apps on the left-side menu and then select your app
+2. Click the ADD AD UNIT button
+3. Select the type of ad (e.g Banner)
+4. Enter the Ad unit name, click Create ad unit, and then select Done
+5. Similarly, create an ad unit for the Interstitial and Rewarded ads. While creating the rewarded ads, be sure to keep the default settings
+6. Finally, create Ad units for the iOS app as well
+
+<img
+  className="block dark:hidden"
+  src="/images/create-ad.gif"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/create-ad.gif"
+  alt="Hero Dark"
+/>
+
+
+
