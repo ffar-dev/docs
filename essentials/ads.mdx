@@ -4,43 +4,7 @@ description: 'Display Ads'
 icon: 'rectangle-ad'
 ---
 
-## Android Specific Setup
 
-Update your AndroidManifest.xml 
-Add your AdMob App ID to your app's AndroidManifest.xml file by adding the 'meta-data' tag shown below. You can find your App ID in the AdMob UI. For android:value insert your own AdMob App ID in quotes, as shown below.
-
-You can use these test App ID's from Admob for development:
-
-```dart
-android: ca-app-pub-3940256099942544~3347511713
-iOS: ca-app-pub-3940256099942544~1458002511
-```
-
-
-```xml AndroidManifest.xml
-<manifest>
-  <application>
-    <meta-data
-      android:name="com.google.android.gms.ads.APPLICATION_ID"
-      android:value="ca-app-pub-3940256099942544~3347511713"/>
-  </application>
-</manifest>
-```
-
-## iOS Specific Setup
-
-Update your Info.plist per [Firebase instructions](https://developers.google.com/admob/ios/quick-start#update_your_infoplist).
-
-```plist Info.plist
-<key>GADApplicationIdentifier</key>
-<string>ca-app-pub-3940256099942544~1458002511</string>
-```
-and add
-
-```plist Info.plist
-<key>io.flutter.embedded_views_preview</key>
-<true/>
-```
 
 ## Adding the AdMob app
 1. Head over to the AdMob homepage and sign up for an account
@@ -85,5 +49,41 @@ Here’s how you do it:
   alt="Hero Dark"
 />
 
+## Android Specific Setup
 
+Update your AndroidManifest.xml 
+Add your AdMob App ID to your app's AndroidManifest.xml file by adding the 'meta-data' tag shown below. You can find your App ID in the AdMob UI. For android:value insert your own AdMob App ID in quotes, as shown below.
+
+You can use these test App ID's from Admob for development:
+
+```dart
+android: ca-app-pub-3940256099942544~3347511713
+iOS: ca-app-pub-3940256099942544~1458002511
+```
+
+
+```xml AndroidManifest.xml
+<manifest>
+  <application>
+    <meta-data
+      android:name="com.google.android.gms.ads.APPLICATION_ID"
+      android:value="ca-app-pub-3940256099942544~3347511713"/>
+  </application>
+</manifest>
+```
+
+## iOS Specific Setup
+
+Update your Info.plist per [Firebase instructions](https://developers.google.com/admob/ios/quick-start#update_your_infoplist).
+
+```plist Info.plist
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-3940256099942544~1458002511</string>
+```
+and add
+
+```plist Info.plist
+<key>io.flutter.embedded_views_preview</key>
+<true/>
+```
 
