@@ -37,8 +37,8 @@
     {
       "group": "Essentials",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
+        "essentials/inapp",
+        "essentials/ads",
         "essentials/images",
         "essentials/settings",
         "essentials/navigation",
