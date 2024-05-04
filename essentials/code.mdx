@@ -1,37 +1,48 @@
 ---
-title: 'Code Blocks'
-description: 'Display inline code and code blocks'
-icon: 'code'
+title: 'Ads'
+description: 'Display Ads'
+icon: 'rectangle-ad'
 ---
 
-## Basic
+## Android Specific Setup
 
-### Inline Code
+Update your AndroidManifest.xml 
+Add your AdMob App ID to your app's AndroidManifest.xml file by adding the 'meta-data' tag shown below. You can find your App ID in the AdMob UI. For android:value insert your own AdMob App ID in quotes, as shown below.
 
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
+You can use these test App ID's from Admob for development:
 
-```
-To denote a `word` or `phrase` as code, enclose it in backticks (`).
-```
-
-### Code Block
-
-Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
-
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+```dart
+android: ca-app-pub-3940256099942544~3347511713
+iOS: ca-app-pub-3940256099942544~1458002511
 ```
 
-````md
-```java HelloWorld.java
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
+
+```xml AndroidManifest.xml
+<manifest>
+  <application>
+    <meta-data
+      android:name="com.google.android.gms.ads.APPLICATION_ID"
+      android:value="ca-app-pub-3940256099942544~3347511713"/>
+  </application>
+</manifest>
 ```
-````
+
+## iOS Specific Setup
+
+Update your Info.plist per [Firebase instructions](https://developers.google.com/admob/ios/quick-start#update_your_infoplist).
+
+```plist Info.plist
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-3940256099942544~1458002511</string>
+```
+and add
+
+```plist Info.plist
+<key>io.flutter.embedded_views_preview</key>
+<true/>
+```
+
+
+
+
+
