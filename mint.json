@@ -25,7 +25,6 @@
     "name": "FlutterPlate",
     "url": "https://flutterplate.dev"
   },
- 
   "navigation": [
     {
       "group": "Get Started",
@@ -49,7 +48,5 @@
   ],
   "footerSocials": {
     "x": "https://x.com/onedevbuddy"
-    }
-}
   }
 }
