@@ -4,7 +4,121 @@ description: 'Weekly,Monthly,Lifetime and how we handle it'
 icon: 'cart-shopping'
 ---
 
-## Titles
+## iOS
 
-Best used for section headers.
+### Subscription
+
+1. Go Subscription tab on your AppStore Connect account of your app. You will see it on left menu.
+
+<img
+  className="block dark:hidden"
+  src="/images/in-app.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/in-app.png"
+  alt="Hero Dark"
+/>
+
+2. Create Subscription Group.
+
+<img
+  className="block dark:hidden"
+  src="/images/group.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/group.png"
+  alt="Hero Dark"
+/>
+
+3. Create Subscription. For every Subscription (Weekly,Monthly,Yearly) we want to have seperate item. 
+For id of subscription we are recommended to use such formula "yourApp_duration_price"
+For ex. "wally_1w_299"
+This is unique id which we will use then on RevenueCat Dashboard and in our app directly. So i recommend to think about it and save it.
+
+<img
+  className="block dark:hidden"
+  src="/images/subscription.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/subscription.png"
+  alt="Hero Dark"
+/>
+
+4. On Subscription page we are filling data about Subscription as Duration, Localization, Pricing and Screenshot of paywall. It is needed for easier review of your app. I believe sometimes reviewer does not look directly to your paywall in app, he just looks at your screenshot, so do not forget to upgrade it, when you change paywall.
+
+💡 Do not forget to add "Restore" button on your paywall, it is common reject from Apple.
+
+<img
+  className="block dark:hidden"
+  src="/images/sub-inner.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/sub-inner.png"
+  alt="Hero Dark"
+/>
+
+5. Create App on RevenueCat console
+Here we will need walk through flow.
+
+<img
+  className="block dark:hidden"
+  src="/images/rev-app.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/rev-app.png"
+  alt="Hero Dark"
+/>
+
+6. Get Shared App Secret from AppStore Connect
+
+<img
+  className="block dark:hidden"
+  src="/images/secret-app.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/secret-app.png"
+  alt="Hero Dark"
+/>
+
+7. Get In App Key from Integrations Tab in AppStore Connect
+
+<img
+  className="block dark:hidden"
+  src="/images/in-app-key.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/in-app-key.png"
+  alt="Hero Dark"
+/>
+
+8. Add Your Products. Id should be exactly as it is on AppStore side.
+
+<img
+  className="block dark:hidden"
+  src="/images/add-product.png"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/add-product.png"
+  alt="Hero Dark"
+/>
+
+
+
+
 
