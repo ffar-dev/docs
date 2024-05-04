@@ -8,6 +8,9 @@ icon: 'cart-shopping'
 
 ### Subscription
 
+We will walk through Subscriptions. It is the same for In App products.
+
+
 1. Go Subscription tab on your AppStore Connect account of your app. You will see it on left menu.
 
 <img
@@ -115,6 +118,93 @@ Here we will need walk through flow.
 <img
   className="hidden dark:block"
   src="/images/add-product.png"
+  alt="Hero Dark"
+/>
+
+## Android
+
+1. Go to Cloud console and click “IAM Admin” => click Service Account
+
+https://console.cloud.google.com/
+
+<img
+  className="block dark:hidden"
+  src="/images/service.webp"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/service.webp"
+  alt="Hero Dark"
+/>
+
+2. Click Create Service Account.
+
+<img
+  className="block dark:hidden"
+  src="/images/role.webp"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/role.webp"
+  alt="Hero Dark"
+/>
+
+3. Write a unique name and continue and second step add these two roles.
+
+<img
+  className="block dark:hidden"
+  src="/images/permissions.webp"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/permissions.webp"
+  alt="Hero Dark"
+/>
+
+Pub/Sub Admin — this enables Platform Server Notifications
+Monitoring Viewer — this allows monitoring of the notification queue
+Continue and save.
+
+4. After that at the right tab, create a new Key and download the Key.
+
+<img
+  className="block dark:hidden"
+  src="/images/key.webp"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/key.webp"
+  alt="Hero Dark"
+/>
+
+5. Open Play Console And Grant Financial Access
+Go to your play console dashboard and click Api Access => Click Service accounts manage play console permissions.
+
+<img
+  className="block dark:hidden"
+  src="/images/permission-key.gif"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/permission-key.gif"
+  alt="Hero Dark"
+/>
+
+6. Click App Users and Permissions, select your app.
+
+<img
+  className="block dark:hidden"
+  src="/images/add-app.webp"
+  alt="Hero Light"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/add-app.webp"
   alt="Hero Dark"
 />
 
